@@ -1,1 +1,2 @@
-if 9 + 10 = 21 print(you're stupid)
+if 9 + 10 = 21 
+print(you're stupid)
