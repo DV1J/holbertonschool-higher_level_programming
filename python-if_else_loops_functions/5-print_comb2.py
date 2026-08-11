@@ -1,11 +1,7 @@
 #!/usr/bin/python3
 
 for i in range(100):
-    if i < 10:
-        print(f"0{i}",end="")
-    if i >= 10:
-        print(f"{i}",end="")
-    if i != 99:
-        print(","," ",end="")
+    if i < 99:
+        print(f"{i:02d}", end=", ")
     else:
-        print("\n")
+        print(f"{i:02d}")
