@@ -7,7 +7,7 @@ if __name__ == "__main__":
         print(num, 'arguments')
     elif num == 1:
         print(num, 'argument:')
-    elif num > 2:
+    elif num >= 2:
         print(num, 'arguments:')
     for j in argv[1:]:
         print("{}: {}".format(i, j))
