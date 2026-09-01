@@ -4,5 +4,5 @@ def print_matrix_integer(matrix=[[]]):
         for j in i:
             if j != i[-1]:
                 print("{:d}".format(j), end=' ')
-            elif j % 3 == 0:
+            elif j == i[-1]:
                 print("{:d}".format(j), '')
