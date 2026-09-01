@@ -12,6 +12,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
             tb = 0, 0
         else:
             tb = tb[0], 0
-    add = (ta[0] + tb[0])
-    add_2 = (ta[1] + tb[1])
-    return (add, add_2)
+    return(ta[0] + tb[0], ta[1] + tb[1])
