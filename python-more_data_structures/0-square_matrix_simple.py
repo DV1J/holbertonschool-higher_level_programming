@@ -15,3 +15,4 @@ def square_matrix_simple(matrix=[]):
                 sq3 = map(square, (new_matrix[num2]))
                 sq = list(sq1), list(sq2), list(sq3)
                 return (list(sq))
+
