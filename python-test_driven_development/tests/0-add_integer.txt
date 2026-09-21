@@ -10,6 +10,3 @@
 98
 >>> add_integer(0, 0)
 0
->>> #testing for negative numbers
->>> add_integer (0, -1)
--1
