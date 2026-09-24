@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """A function that prints a square
 """
+
+
 def print_square(size):
     """checking if size is int if not then rasie TypeError
     """
