@@ -4,16 +4,16 @@
 >>> print_square(0)
 
 >>> print_square(1)
-# 
+#
 >>> print_square(2)
-# # 
-# # 
+##
+##
 >>> print_square(5)
-# # # # # 
-# # # # # 
-# # # # # 
-# # # # # 
-# # # # # 
+#####
+#####
+#####
+#####
+#####
 
 >>> #checking is Errors are being Raised correctly
 >>> print_square(-1)
