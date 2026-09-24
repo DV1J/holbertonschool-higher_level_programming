@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """A function that prints a square
 """
+
+
 def print_square(size):
     """checking if size is int if not then rasie TypeError
     """
@@ -15,6 +17,4 @@ def print_square(size):
     if type(size) is float and size < 0:
         raise TypeError('size must be an integer')
     for i in range(size):
-        for j in range(size):
-            print('#', end=' ')
-        print()
+        print(size * '#')
