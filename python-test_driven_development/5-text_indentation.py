@@ -10,9 +10,9 @@ def text_indentation(text):
         raise TypeError('text must be a string')
     for i in text:
         if i != '.' and i != '?' and i != ':':
-            text = text.rstrip()
+            text = text.strip()
             print(i, end='')
         else:
-            text = text.rstrip()
+            text = text.strip()
             print(i)
             print()
