@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""A funtion that has an empty class named Square
-"""
-
-
 class Square:
+    """A funtion that has an empty class named Square
+    """
     pass
