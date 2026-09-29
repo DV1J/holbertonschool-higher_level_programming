@@ -8,11 +8,10 @@ def text_indentation(text):
     """
     if type(text) is not str:
         raise TypeError('text must be a string')
+    text = text.strip()
     for i in text:
         if i != '.' and i != '?' and i != ':':
-            text = text.strip()
             print(i, end='')
         else:
-            text = text.strip()
             print(i)
             print()
