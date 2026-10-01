@@ -15,7 +15,7 @@ def matrix_divided(matrix, div):
     """Chcking if div is a number by checking its type
        Raises a typeError if it is
     """
-    if type(div) is not int or float:
+    if type(div) is not int:
         raise TypeError('div must be a number')
     """Checking if div is zero
        if it is then raise zeroDivisionError
