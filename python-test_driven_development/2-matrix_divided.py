@@ -15,7 +15,7 @@ def matrix_divided(matrix, div):
     """Chcking if div is a number by checking its type
        Raises a typeError if it is
     """
-    if type(div) is not int:
+    if type(div) is not (int, float):
         raise TypeError('div must be a number')
     """Checking if div is zero
        if it is then raise zeroDivisionError
@@ -24,6 +24,8 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError('division by zero')
     new_matrix = []
     for i in matrix:
+        if type(i) is not list or i == []:
+            raise TypeError(msg)
         new_new_matrix = []
         for j in i:
             num = round(j / div, 2)
