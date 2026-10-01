@@ -30,6 +30,8 @@ def matrix_divided(matrix, div):
             raise TypeError('Each row of the matrix must have the same size')
         new_new_matrix = []
         for j in i:
+            if type(j) not in (int, float):
+                raise TypeError(msg)
             num = round(j / div, 2)
             new_new_matrix.append(num)
         new_matrix.append(new_new_matrix)
