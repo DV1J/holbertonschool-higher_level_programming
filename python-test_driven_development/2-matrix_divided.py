@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def matrix_divided(matrix, div):
     msg = ('matrix must be a matrix (list of lists) of integers/floats')
     if type(matrix) is not list or matrix == []:
