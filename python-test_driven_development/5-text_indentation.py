@@ -8,10 +8,14 @@ def text_indentation(text):
     """
     if type(text) is not str:
         raise TypeError('text must be a string')
-    text = text.strip()
+    new_line= True
     for i in text:
-        if i != '.' and i != '?' and i != ':':
-            print(i, end='')
-        else:
+        if new_line and i == ' ':
+            continue
+        new_line = False
+        if i in ('.','?',':'):
             print(i)
             print()
+            new_line = True
+        else:
+            print(i, end='')

@@ -7,7 +7,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 >>> text_indentation("""Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere?""")
 Quonam modo?
 <BLANKLINE>
- Utrum igitur tibi litteram videor an totas paginas commovere?
+Utrum igitur tibi litteram videor an totas paginas commovere?
 <BLANKLINE>
 
 >>> #Testing if TypeError works properly
