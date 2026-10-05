@@ -6,27 +6,27 @@
 
 
 class Square:
-    """Private instance size"""
-    size = None
-
-    def size(self):
-        self.size
-
-    def size(self, value):
-        self.size = value
-
     def __init__(self, size=0):
         self.size = size
-    """Defining area"""
-    def area(self):
+
+    @property
+    def size(self):
+        return self.__size
+
+    @size.setter
+    def size(self, value):
         """checking for TypeError
         """
-        if type(self.size) is not int:
+        if type(value) is not int:
             raise TypeError('size must be an integer')
         """Checking for ValueError
         """
-        if self.size < 0:
+        if value < 0:
             raise ValueError('size must be >= 0')
+        self.__size = value
+
+    """Defining area"""
+    def area(self):
         """Returning Area
         """
-        return self.size * self.size
+        return self.__size * self.__size
