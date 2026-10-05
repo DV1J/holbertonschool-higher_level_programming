@@ -6,11 +6,15 @@
 
 
 class Square:
+    """A class that defines Square by its size
+    """
     def __init__(self, size=0):
+        """Size = Size of the square"""
         self.size = size
 
     @property
     def size(self):
+        """Gets the size of the square"""
         return self.__size
 
     @size.setter
