@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """Empty class Rectangle"""
 
 
@@ -43,7 +42,7 @@ class Rectangle:
 
     def perimeter(self):
         """Checking if height or width is 0
-            If it is then return perimeter 0         
+            If it is then return perimeter 0
         """
         if self.__width == 0:
             return ('0')
@@ -54,7 +53,7 @@ class Rectangle:
 
     def __str__(self):
         if self.__height == 0:
-            return('')
+            return ('')
         if self.__width == 0:
-            return('')
-        return(('#' * self.__width + '\n') * self.__height)
+            return ('')
+        return (('#' * self.__width + '\n') * self.__height)
