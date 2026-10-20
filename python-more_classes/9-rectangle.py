@@ -36,8 +36,8 @@ class Rectangle:
         self.__height = value
 
     def __init__(self, width=0, height=0):
-        self.height = height
         self.width = width
+        self.height = height
         """printing symbol"""
         self.print_symbol
         """counting instance"""
