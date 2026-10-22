@@ -8,7 +8,7 @@ Otherwise False
 def is_same_class(obj, a_class):
     """Checking if obj is an instance of class
     """
-    if dir(obj) == dir(a_class):
+    if type(obj) is a_class:
         return True
     else:
         return False
