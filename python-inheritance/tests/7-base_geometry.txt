@@ -19,3 +19,19 @@
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [ValueError] age must be greater than 0
+
+>>> #testing for area
+
+>>> try:
+...    print(bg.area())
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+[Exception] area() is not implemented
+
+>>> #testing for no input
+
+>>> try:
+...     bg.integer_validator()
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
