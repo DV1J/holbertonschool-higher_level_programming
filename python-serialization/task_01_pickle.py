@@ -1,6 +1,7 @@
 #!/usr/bin/pyhton3
 import pickle
 
+
 class CustomObject:
 
     def __init__(self, name, age, is_student):
@@ -9,7 +10,7 @@ class CustomObject:
         self.is_stdent = is_student
 
     def display(self):
-        print ('Name:', self.name)
+        print('Name:', self.name)
         print('Age:', self.age)
         print('Is Student:', self.is_stdent)
 
