@@ -24,7 +24,7 @@ class CustomObject:
     def serialize(self, filename):
         """Serialize the object and save it to the given file."""
         try:
-            with open(filename, 'wb') as f:
+            with open(filename, 'wb', encoding='utf-8') as f:
                 pickle.dump(self, f)
         except Exception:
             return None
@@ -34,7 +34,7 @@ class CustomObject:
     def deserialize(cls, filename):
         """Load and deserialize an object from the given file."""
         try:
-            with open(filename, 'rb') as f:
+            with open(filename, 'rb', encoding='utf-8') as f:
                 return pickle.load(f)
         except Exception:
             return None
