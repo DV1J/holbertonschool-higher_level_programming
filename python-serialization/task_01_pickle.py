@@ -11,16 +11,18 @@ class CustomObject:
     def __init__(self, name, age, is_student):
         self.name = name
         self.age = age
-        self.is_stdent = is_student
+        self.is_student = is_student
 
     """method to print attributes"""
     def display(self):
+        """Print the attributes of the object."""
         print('Name:', self.name)
         print('Age:', self.age)
         print('Is Student:', self.is_student)
 
     """method to serialize and save instance of object"""
     def serialize(self, filename):
+        """Serialize the object and save it to the given file."""
         try:
             with open(filename, 'wb') as f:
                 pickle.dump(self, f)
@@ -30,6 +32,7 @@ class CustomObject:
     """method to deserialize and load instance of object"""
     @classmethod
     def deserialize(cls, filename):
+        """Load and deserialize an object from the given file."""
         try:
             with open(filename, 'rb') as f:
                 return pickle.load(f)
