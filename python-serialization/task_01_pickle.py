@@ -17,7 +17,7 @@ class CustomObject:
     def display(self):
         print('Name:', self.name)
         print('Age:', self.age)
-        print('Is Student:', self.is_stdent)
+        print('Is Student:', self.is_student)
 
     """method to serialize and save instance of object"""
     def serialize(self, filename):
