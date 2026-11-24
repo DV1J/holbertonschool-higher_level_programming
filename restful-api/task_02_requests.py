@@ -23,7 +23,7 @@ def fetch_and_save_posts():
                 'body': i['body']
             }
             posts.append(new_post)
-        with open('post.csv', 'w', newline="", encoding='utf-8') as post:
+        with open('posts.csv', 'w', newline="", encoding='utf-8') as post:
             write = csv.DictWriter(post, fieldnames=['id','title', 'body'])
             write.writeheader()
             write.writerows(posts)
